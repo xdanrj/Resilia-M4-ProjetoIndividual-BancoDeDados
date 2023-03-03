@@ -1,5 +1,5 @@
 # Resilia Módulo 4: Projeto Individual "Sistema Resilia"
-Um modelo de banco de dados fictício para o sistema do Resilia com as entidades "cursos", "alunos", "professores", "matrículas" e "turmas".
+Um modelo de banco de dados para o sistema educacional do Resilia.
 
 ## ⇨ Existem outras entidades além dessas três?
 Sim. São as entidades de Professores e Disciplinas.
