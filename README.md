@@ -2,13 +2,18 @@
 Um modelo de banco de dados fictício para o sistema do Resilia com as entidades "cursos", "alunos", "professores", "matrículas" e "turmas".
 
 ## ⇨ Existem outras entidades além dessas três?
-Sim. São as entidades de Professores e Matrículas.
+Sim. São as entidades de Professores e Disciplinas.
 
 ## ⇨ Quais são os principais campos e tipos?
-Nomes (varchar), datas de nascimento (date) e CPFs (varchar).
+* Nome, CPF, endereço e sexo ```(VARCHAR)```
+* Data de nascimento ```(DATE)```
+* Telefone ```(BIGINT)```
+* IDs de chaves primárias e estrangeiras ```(INT)```
 
 ## ⇨ Como essas entidades estão relacionadas?
-* Um curso pode possuir várias turmas.
-* Um professor pode ministrar aulas em várias turmas.
-* Um aluno pode ter uma matrícula.
-* Um aluno pode estar em uma turma.
+* Um aluno pode estudar em um curso. ```(1,1)```
+* Um aluno pode estar em uma turma. ```(1,1)```
+* Um curso pode ser ministrado em várias turmas. ```(1,N)```
+* Um curso pode ter várias disciplinas. ```(1,N)```
+* Um professor pode ministrar várias disciplinas. ```(1,N)```
+* Uma turma contém um curso. ```(1,1)```
